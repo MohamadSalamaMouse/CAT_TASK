@@ -19,4 +19,4 @@ else "Scalene"
 end as triangles_type
 from TRIANGLES;                                                               
 
-// CASE 
+// CASE 1
