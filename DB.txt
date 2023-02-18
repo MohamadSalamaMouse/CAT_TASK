@@ -20,3 +20,27 @@ end as triangles_type
 from TRIANGLES;                                                               
 
 // CASE 1
+WEEK6
+PS1->SELECT name FROM Employee WHERE salary>2000 and months<10 order by employee_id
+PS2->select CITY.Name from CITY INNER JOIN COUNTRY on CITY.CountryCode= COUNTRY.Code WHERE CONTINENT='Africa'
+ps3->select SUM(CITY.POPULATION) from CITY INNER JOIN COUNTRY on CITY.CountryCode= COUNTRY.Code where CONTINENT='Asia'
+ps4->SET
+
+sex = CASE sex
+
+        WHEN 'm' THEN 'f'
+
+        ELSE 'm'
+
+    END;
+ps5->SELECT t.Name
+FROM (
+    SELECT s1.ID, s1.Name, p1.Salary, f.Friend_ID, s2.name as friend_name, p2.Salary as friend_salary
+    FROM Students s1
+    JOIN Packages p1 ON s1.ID = p1.ID
+    JOIN Friends f ON s1.ID = f.ID
+    JOIN Students s2 ON f.Friend_ID = s2.ID
+    JOIN Packages p2 ON f.Friend_ID = p2.ID
+    ) t
+WHERE t.friend_salary > t.Salary
+ORDER BY friend_salary;

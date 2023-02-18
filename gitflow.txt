@@ -1,0 +1,17 @@
+git flow init
+git flow feature start nameof feature
+touch index.js//create file
+ls
+git branch -a
+git flow feature finish featurename
+git flow release start 0.2
+git flow release finish 0.2
+git push --set-upstream origin develop
+
+
+
+
+///add branch
+git branch new-branch
+//move to branch
+git checkout new-branch
