@@ -15,3 +15,7 @@ git push --set-upstream origin develop
 git branch new-branch
 //move to branch
 git checkout new-branch
+
+
+
+git reset --hard
